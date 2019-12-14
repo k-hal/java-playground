@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/java-playground
+    docker:
+      - image: openjdk:11-stretch
+    steps:
+      - checkout
+      - run: javac -version
+      - run: javac HelloWorld.java
+      - run: java HelloWorld
