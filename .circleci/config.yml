@@ -9,7 +9,6 @@ jobs:
       - run: javac -version
       - run: javac HelloWorld.java
       - run: java HelloWorld
-
 workflows:
   version: 2
   build:
