@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/java-playground
     docker:
-      - image: cimg/openjdk:19.0.2
+      - image: cimg/openjdk:20.0.1
     steps:
       - checkout
       - run: javac -version
